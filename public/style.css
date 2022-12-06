@@ -1,24 +1,50 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../Font/oswald-Regular.woff2') format('woff2');
+    src: url('../Font/oswald-Regular.ttf') format('truetype');
+}
+
 body {
-  font-family: sans-serif;
-  margin: auto;
-  max-width: 1280px;
+    color: #dedede;
+    font-family: 'Oswald';
+    font-weight: 200;
+    font-style: inherit;
+    position: relative;
+    background-image: url('../Images/bg.jpg');
 }
 
-.navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
+
+#backlink:hover {
+    background-color: #dedede;
 }
 
-.navbar a {
-  color: #aaa;
-  display: inline-block;
-  font-size: 15px;
-  padding: 10px;
-  text-decoration: none;
+.nav_link {
+    color: #dedede;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Oswald';
+    font-size: 2rem;
 }
 
-.navbar a:hover {
-  color: #ffffff;
+a {
+    padding: 10px;
+    position: sticky;
+    top: 5px;
 }
 
+.barre {
+    position: sticky;
+    top: 0px;
+}
+
+/* .select :hover{
+    background-color: #dedede;
+    color: black;
+<<<<<<< HEAD
+} */
+
+@media (max-width:700px){
+    a{
+        color: red!important;
+    }
+}
