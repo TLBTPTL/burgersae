@@ -15,7 +15,7 @@
       </div>
     </header>  
     <header>
-        <img id="band" alt="band" src="Images/band.jpg">
+        <img id="band" alt="band" src="../Images/band.jpg">
     </header>
 
     <!-- <div id="mySidenav" class="sidenav">
@@ -59,16 +59,16 @@
 
         <div class="pres">
 
-          <span class="pres_box"><img src="Images/classic_burger.png" id="classic_burger" class="img_pres">
+          <span class="pres_box"><img src="../Images/classic_burger.png" id="classic_burger" class="img_pres">
           <h3 class="pres_text">Burger Classique</h3></span>
 
-          <span class="pres_box"><img src="Images/classic_burger.png" id="classic_burger" class="img_pres">
+          <span class="pres_box"><img src="../Images/classic_burger.png" id="classic_burger" class="img_pres">
             <h3 class="pres_text">Burger Classique</h3></span>
 
-          <span class="pres_box"><img src="Images/classic_burger.png" id="classic_burger" class="img_pres">
+          <span class="pres_box"><img src="../Images/classic_burger.png" id="classic_burger" class="img_pres">
           <h3 class="pres_text">Burger Classique</h3></span>
 
-          <span class="pres_box"><img src="Images/classic_burger.png" id="classic_burger" class="img_pres">
+          <span class="pres_box"><img src="../Images/classic_burger.png" id="classic_burger" class="img_pres">
             <h3 class="pres_text">Burger Classique</h3></span>
         </div>
 

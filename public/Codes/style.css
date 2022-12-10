@@ -11,6 +11,9 @@ body {
     font-style: inherit;
     position: relative;
     background-image: url('../Images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-justify:distribute;
 }
 
 
@@ -40,7 +43,6 @@ a {
 /* .select :hover{
     background-color: #dedede;
     color: black;
-<<<<<<< HEAD
 } */
 
 @media (max-width:700px){
@@ -48,3 +50,23 @@ a {
         color: red!important;
     }
 }
+
+
+.img_pres{
+    height: 80%;
+    width: auto;
+}
+
+.pres{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.pres_box{
+    background-color: black;
+    text-align: center;
+    margin: 1em;
+    height: 30%;
+    width: auto;
+}
+
