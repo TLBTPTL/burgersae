@@ -18,8 +18,7 @@
         <div class="backlink">
 
 
-
-            <img href="../Images/logo.png" class="logo">
+            <img src="../Images/logo.png" alt="logo" class="logo">
             <a id="home_link" class="topnav_link backlink" href="index.html">ACCUEIL</a>
             <a class="topnav_link backlink" href="formulaire get.html">COMMANDE</a>
             <a class="topnav_link backlink" href="contact.html">CONTACT</a>
@@ -68,20 +67,8 @@
             <input type="submit" value="Commander" class="grid-item8" id="bouton_envoi">
             <span id='miss' class="errorE"></span>
         </form>
-        <form>
-            <label for="my-select">Choose an option:</label>
-            <select id="my-select" name="my-select" required>
-                <option value="">Please select an option</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-            </select>
-            <input type="submit" value="Submit">
-        </form>
     </main>
 </body>
-
-
 
 <!--
 <script>
