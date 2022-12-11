@@ -1,0 +1,139 @@
+/*body :hover {
+    background-color: red;
+}*/
+
+form {
+    justify-content: center;
+}
+
+.grid-containner {
+    display: grid;
+
+    /*border-style: groove;
+    border-radius: 50px;
+    border-color: black;*/
+    padding: 15px;
+
+    font-family: Oswald;
+    text-align: center;
+
+    grid-template-columns: repeat(2, minmax(200px, 300px));
+    grid-template-rows: repeat(8, minmax(20px, auto));
+
+    grid-template-areas:
+        "a b"
+        "c d"
+        "e f"
+        "g h"
+        "i j"
+        "k l"
+        "m n"
+        "o o"
+        "p p";
+
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.last_name {
+    grid-area: a;
+    text-align: right;
+    padding-right: 20px;
+    /*background-color: blue;
+    color: red;*/
+}
+
+.grid-item1 {
+    /*Case nom*/
+    grid-area: b;
+}
+
+.first_name {
+    grid-area: c;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.grid-item2 {
+    /*Case prénom*/
+    grid-area: d;
+}
+
+.phone {
+    grid-area: e;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.grid-item3 {
+    /*Case téléphone*/
+    grid-area: f;
+}
+
+.formule {
+    grid-area: g;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.grid-item4 {
+    /*Case formule*/
+    grid-area: h;
+    text-align: left;
+}
+
+.time {
+    grid-area: i;
+}
+
+.grid-item5 {
+    /*Case heure*/
+    grid-area: j;
+}
+
+.paiement {
+    grid-area: k;
+}
+
+.grid-item7 {
+    /*Case paiement*/
+    grid-area: l;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-style: italic;
+}
+
+.end {
+    grid-area: m;
+}
+
+.grid-item6 {
+    /*Case contact*/
+    grid-area: n;
+}
+
+.grid-item8 {
+    /*Case Valider*/
+    grid-area: o;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+input {
+    margin: 7px;
+    padding: 4px;
+    background-color: white;
+    border-radius: 7px;
+    border-color: black;
+}
+
+.titre {
+    padding-left: 70px;
+}
+
+.errorE {
+    grid-area: p;
+    color: red;
+}
