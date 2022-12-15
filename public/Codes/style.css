@@ -9,19 +9,72 @@ body {
     font-family: 'Oswald';
     font-weight: 200;
     font-style: inherit;
-    position: relative;
+
     background-image: url('../Images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    text-justify:distribute;
+    text-justify: distribute;
+}
+
+.pres {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+.img_pres {
+    height: 300px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.pres_box {
+    background-color: black;
+    text-align: center;
+    margin: 1em;
+    height: 30%;
+    border-radius: 10%;
+    opacity: 70%;
+}
+
+.pres_text {
+    background-color: black;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.pres_box,
+#classic_burger {
+    border: 5px solid rgba(255, 255, 255, 0);
+}
+
+.pres_box:hover,
+#classic_burger:hover {
+    border: 5px solid white;
+    transition: 0.5s;
+}
+
+.intro {
+    text-align: center;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #2f2f2f;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 20px;
+    border: 3px solid #2f2f2f;
 }
 
 
-#backlink:hover {
-    background-color: #dedede;
-}
-
-.nav_link {
+/*.nav_link {
     color: #dedede;
     text-transform: uppercase;
     font-weight: 400;
@@ -29,44 +82,36 @@ body {
     font-size: 2rem;
 }
 
-a {
-    padding: 10px;
-    position: sticky;
-    top: 5px;
-}
-
-.barre {
-    position: sticky;
-    top: 0px;
-}
-
-/* .select :hover{
+#backlink:hover {
     background-color: #dedede;
-    color: black;
-} */
-
-@media (max-width:700px){
-    a{
-        color: red!important;
-    }
 }
+*/
 
 
-.img_pres{
-    height: 80%;
-    width: auto;
-}
 
-.pres{
+/*
+.pres {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.pres_box{
+.img_pres {
+    height: 80%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.pres_box {
     background-color: black;
     text-align: center;
     margin: 1em;
     height: 30%;
-    width: auto;
+    border-radius: 10%;
 }
 
+.pres_text {
+    background-color: black;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+*/
