@@ -1,97 +1,180 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Burger d'exemple</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style_header.css">
-  <link rel="stylesheet" href="style_footer.css">
-  <link rel="stylesheet" href="style_burger">
-  <link rel="icon" href="../Images/icon.png">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <link rel="stylesheet" href="style_formulaire.css">
+    <link rel="icon" href="../Images/icon.png">
+    <script src="script.js"></script>
 </head>
-
 
 
 
 <body>
 
-  <header>
-    <div>
-      <nav id="topnav_responsive_menu"></nav>
-    </div>
-    <img id="band" alt="band" src="../Images/band.jpg">
-  </header>
+    <header class="barre">
 
-  <header class="barre">
+        <nav id="topnav_menu">
+            <div class="back">
+                <img src="../Images/logo.png" alt="logo" class="logo">
+                <a id="home_link" class="topnav_link backlink" href="index.html">ACCUEIL</a>
+                <a class="topnav_link backlink" href="formulaire_post.html">COMMANDE</a>
+                <a class="topnav_link backlink" href="contact.html">CONTACT</a>
 
-    <nav id="topnav_menu">
-      <div class="back">
-        <img src="../Images/logo.png" alt="logo" class="logo">
-        <a id="home_link" class="topnav_link backlink" href="../index.html">ACCUEIL</a>
-        <a class="topnav_link backlink" href="formulaire_get.html">COMMANDE</a>
-        <a class="topnav_link backlink" href="contact.html">CONTACT</a>
-      </div>
-    </nav>
+            </div>
+        </nav>
 
-  </header>
+    </header>
+    <main>
+        <div>
+            <h1 class="titre">PASSEZ VOTRE COMMANDE</h1>
+        </div>
+        <form action="formulaire.php" method="post" class="grid-containner">
+            <label for="first_name" class="first_name">Prénom :</label>
+            <label for="last_name" class="last_name">Nom :</label>
+            <label for="phone" class="phone">Téléphone :</label>
+            <label for="burger" class="burger">Choisissez votre burger :</label>
+            <p class="formule">Choississez votre formule :</p>
+            <label for="time" class="time">Pour quelle heure voulez-vous votre commande ?</label>
+            <p class="end">Voulez-vous être contacté par téléphone lorsque votre commande est
+                prête ?</p>
+            <label for="paiement" class="paiement">Méthode de paiement :</label>
+            <input type="text" id="last_name" class="grid-item1" name="nom" required pattern="[a-zA-ZéèîïÉÈÎÏ-']+">
+            <input type="text" id="first_name" class="grid-item2" name="prenom" required>
+            <input type="tel" id="phone" class="grid-item3" name="tel" required
+                pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" value="XX-XX-XX-XX-XX">
+            <select id="burger" class="grid-item9" name="burger" required>
+                <option value="">Veuillez choisir une option</option>
+                <option value="classique">Classique</option>
+                <option value="bbc">Barbecue</option>
+                <option value="savoyard">Savoyard</option>
+                <option value="veggie">Veggie</option>
+                <option value="poulet">Poulet</option>
+                <option value="ultime">Ultime</option>
+            </select>
+            <span class="grid-item4">
+                <label>
+                    <input type="radio" name="formule" value="S" required> Sandwitch seul <br>
+                </label>
+                <label>
+                    <input type="radio" name="formule" value="S_F" required> Sandwitch + Frites <br>
+                </label>
+                <label>
+                    <input type="radio" name="formule" value="S_B" required> Sandwitch + Boisson <br>
+                </label>
+                <label>
+                    <input type="radio" name="formule" value="S_B_F" required> Sandwitch + Frites + Boisson
+                </label>
+                <br>
+            </span>
+            <input type="time" id="time" class="grid-item5" name="heure" required>
+            <span class="grid-item6">
+                <label>
+                    <input type="radio" name="contact" value="Oui" required> Oui
+                </label>
+                <label>
+                    <input type="radio" name="contact" value="Non" required> Non
+                </label>
+            </span>
+            <select id="paiement" class="grid-item7" name="paiement" required>
+                <option value="">Veuillez choisir une option</option>
+                <option value="carte">Carte</option>
+                <option value="izly">Izly</option>
+                <option value="espece">Espèce</option>
+            </select>
+            <input type="submit" value="Commander" class="grid-item8" id="bouton_envoi">
+            <span id='miss' class="errorE"></span>
+        </form>
+    </main>
 
-  <h1 id="descri_title">Voilà la description du burger</h1>
-  <div class="descri_box">
-    <div class="img">
-      <img alt="" src="../Images/main.jpg" id="classic_burger" class="img_descri">
-    </div>
-    <div>
-      <h1 class="descri_txt">Burger d'exemple</h1>
-      <h2 class="descri_txt" id="prix">Prix : 5.50 €</h2>
-      <h2 class="descri_txt">Contenu : </h2>
-      <h3 class="descri_txt">Pain Bun, Triple Steak Haché, Triple Cheddar, Bacon Grillé, Salade, Tomates, Sauce Barbecue
-      </h3>
-	  <p class="descri_txt">Pour en savoir plus sur les burgers, <a class="descri_txt" href="https://fr.wikipedia.org/wiki/Hamburger"> cliquez ici !</a></p>
-    </div>
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Burger</h1>
 
+            <h2>Contact</h2>
 
-  </div>
+            <address class="adresse">
+                <a href="contact.html">1 Rue de la Technologie, 69100 Villeurbanne</a>
+            </address>
+            <a class="footer__btn" href="mailto:burger@gmail.com">Contactez nous</a>
+        </div>
 
-  <footer class="footer">
-    <div class="footer__addr">
-      <h1 class="footer__logo">Burger</h1>
+        <ul class="footer__nav">
 
-      <h2>Contact</h2>
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
 
-      <address class="adresse">
-        <a href="contact.html">1 Rue de la Technologie, 69100 Villeurbanne</a>
-      </address>
-      <a class="footer__btn" href="mailto:burger@gmail.com">Contactez nous</a>
-    </div>
-
-    <ul class="footer__nav">
-
-      <li class="nav__item">
-        <h2 class="nav__title">Legal</h2>
-
-        <ul class="nav__ul">
-          <li>
-            <a href="#" download="rgpd.docx">Politique de confidentialité</a>
-          </li>
-          <li>
-            <a href="#">Conditions d'utilisation</a>
-          </li>
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#" download="rgpd.docx">Politique de confidentialité</a>
+                    </li>
+                    <li>
+                        <a href="#">Conditions d'utilisation</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
-      </li>
-    </ul>
 
-    <div class="Legal">
-      <p>&copy; 2022 Burger. Tout droits réservés.</p>
+        <div class="Legal">
+            <p>&copy; 2022 Burger. Tout droits réservés.</p>
 
-      <div class="legal__links"></div>
-    </div>
-  </footer>
-
+            <div class="legal__links"></div>
+        </div>
+    </footer>
 </body>
 
+<!--
+<script>
+    var formValid = document.getElementById('bouton_envoi');
+    var last_name = document.getElementById('last_name');
+    var first_name = document.getElementById('first_name');
+    var time = document.getElementById('time');
+    var formule = document.getElementById('formule');
+    var contact = document.getElementById('contact');
+    var phone = document.getElementById('phone');
 
+    formValid.addEventListener('click', validation);
+
+    function validation(event) {
+        //Si le champ est vide
+        test.textContent = essai;
+        if (last_name.validity.valueMissing) {
+            event.preventDefault();
+            miss.textContent = 'Champ manquant';
+        }
+        else if (first_name.validity.valueMissing) {
+            event.preventDefault();
+            miss.textContent = 'Champ manquant';
+        }
+        else if (phone.validity.valueMissing) {
+            event.preventDefault();
+            miss.textContent = 'Champ manquant';
+        }
+        else if (time.validity.valueMissing) {
+            event.preventDefault();
+            miss.textContent = 'Champ manquant';
+        }
+        else if (formule.checkValidity == false) {
+            event.preventDefault();
+            miss.textContent = 'Champ manquant';
+        }
+        else if (contact.checkValidity == false) {
+            event.preventDefault();
+            miss.textContent = 'Champ manquant';
+        }
+        else {
+            event.preventDefault();
+            miss.textContent = '';
+        }
+    }
+</script>
+-->
 
 
 </html>

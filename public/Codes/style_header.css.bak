@@ -26,10 +26,10 @@
   }
 }
 
-.back {
+.back{
   opacity: 90%;
-  background-color: rgb(30, 30, 30);
-  display: flex;
+  background-color: rgb(30,30,30);
+  display:flex;
   align-items: center;
 }
 
@@ -38,16 +38,11 @@
   top: 0px;
   color: #dedede;
   opacity: 80%;
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(30,30,30);
   padding: 10px;
 }
 
-.backlink {
-  border: 2px solid rgb(30, 30, 30, 0);
-  transition: 0.5s;
-}
-
-.backlink:hover {
+.backlink:hover{
   border: 2px solid white;
   transition: 0.5s;
 }
@@ -57,6 +52,7 @@ a.backlink :hover {
   opacity: 50%;
   color: black;
 }
+
 
 /* Sidenav menu */
 .sidenav {
