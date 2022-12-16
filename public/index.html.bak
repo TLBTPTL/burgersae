@@ -3,15 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Burger d'exemple</title>
+  <title>Accueil</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style_header.css">
   <link rel="stylesheet" href="style_footer.css">
   <link rel="icon" href="../Images/icon.png">
   <script src="script.js"></script>
 </head>
-
-
 
 
 <body>
@@ -23,12 +21,13 @@
     <img id="band" alt="band" src="../Images/band.jpg">
   </header>
   
+  
   <header class="barre">
   
     <nav id="topnav_menu">
       <div class="back">
         <img src="../Images/logo.png" alt="logo" class="logo">
-        <a id="home_link" class="topnav_link backlink" href="../index.html">ACCUEIL</a>
+        <a id="home_link" class="topnav_link backlink" href="index.html">ACCUEIL</a>
         <a class="topnav_link backlink" href="formulaire_get.html">COMMANDE</a>
         <a class="topnav_link backlink" href="contact.html">CONTACT</a>
       </div>
@@ -36,17 +35,57 @@
   
   </header>
 
-  <div class="descri_box">
-    <div class="img">
-      <img alt="" src="../Images/main.jpg" id="classic_burger" class="img_descri">
-    </div>
-    <div>
-      <h1 class="descri_txt">Burger d'exemple</h1>
-      <h2 class="descri_txt">Contenu : </h2>
-      <h3 class="descri_txt">Pain Bun, Triple Steak Haché, Triple Cheddar, Bacon Grillé, Salade, Tomates, Sauce Barbecue</h3>
-    </div>
+
+  <div class="intro">
+    <h1>Bienvenue sur le site de la caféteria</h1>
+    <h2> Ici vous trouverez tous les burgers qui sont soigneusement préparés rien que pour vous !</h2>
+
+  </div>
+
+  <div class="pres">
 
 
+    <div class="pres_box">
+      <a href="burger.html">
+        <img alt="" src="../Images/main.jpg" id="classic_burger" class="img_pres">
+        <h3 class="pres_text">Burger Classique</h3>
+      </a>
+    </div>
+
+    <div class="pres_box">
+      <a href="burger.html">
+      <img alt="" src="../Images/sandwich.jpg" id="bar_burger" class="img_pres">
+      <h3 class="pres_text">Burger Barbecue</h3>
+      </a>
+    </div>
+
+    <div class="pres_box">
+      <a href="burger.html">
+      <img alt="" src="../Images/burger_raclette.jpg" id="rac_burger" class="img_pres">
+      <h3 class="pres_text">Burger Savoyard</h3>
+      </a>
+    </div>
+
+    <div class="pres_box">
+      <a href="burger.html">
+      <img alt="" src="../Images/classic_burger.png" id="veg_burger" class="img_pres">
+      <h3 class="pres_text">Burger Veggy</h3>
+      </a>
+    </div>
+
+    <div class="pres_box">
+      <a href="burger.html">
+      <img alt="" src="../Images/burger_poulet.jpg" id="pou_burger" class="img_pres">
+      <h3 class="pres_text">Burger Poulet</h3>
+      </a>
+    </div>
+
+    <div class="pres_box">
+      <a href="burger.html">
+      <img alt="" src="../Images/burger_ultime.jpg" id="ulti_burger" class="img_pres">
+      <h3 class="pres_text">Burger Ultime</h3>
+      </a>
+    </div>
   </div>
 
   <footer class="footer">
@@ -85,7 +124,6 @@
   </footer>
 
 </body>
-
 
 
 

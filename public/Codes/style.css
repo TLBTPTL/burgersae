@@ -9,7 +9,7 @@ body {
     font-family: 'Oswald';
     font-weight: 200;
     font-style: inherit;
-	height: 1mv;
+    height: 1mv;
     background-image: url('../Images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,14 +65,23 @@ a:visited{
 }
 
 .pres_box,
-#classic_burger
+#classic_burger,
+#bar_burger:hover .descri_box:hover,
+#rac_burger:hover .descri_box:hover,
+#veg_burger:hover .descri_box:hover,
+#pou_burger:hover .descri_box:hover,
+#ulti_burger:hover .descri_box:hover
 {
     border: 5px solid rgba(255, 255, 255, 0);
 }
 
 .pres_box:hover,
-#classic_burger:hover
-.descri_box:hover {
+#classic_burger:hover .descri_box:hover,
+#bar_burger:hover .descri_box:hover,
+#rac_burger:hover .descri_box:hover,
+#veg_burger:hover .descri_box:hover,
+#pou_burger:hover .descri_box:hover,
+#ulti_burger:hover .descri_box:hover {
     border: 5px solid white;
     transition: 0.5s;
 }
