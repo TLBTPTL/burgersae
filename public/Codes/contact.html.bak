@@ -30,7 +30,7 @@
       <div class="back">
 
         <img src="../Images/logo.png" alt="logo" class="logo">
-        <a id="home_link" class="topnav_link backlink" href="../index.html">ACCUEIL</a>
+        <a id="home_link" class="topnav_link backlink" href="index.html">ACCUEIL</a>
         <a class="topnav_link backlink" href="formulaire_get.html">COMMANDE</a>
         <a class="topnav_link backlink" href="contact.html">CONTACT</a>
 
