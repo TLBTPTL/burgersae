@@ -1,0 +1,12 @@
+#info{
+    border: 2px solid white;
+    width: 25%;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#info:hover{
+    transition: 0.5s;
+}
+
