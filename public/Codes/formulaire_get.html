@@ -23,13 +23,13 @@
         <nav id="topnav_menu">
             <div class="back">
                 <img src="../Images/logo.png" alt="logo" class="logo">
-                <a id="home_link" class="topnav_link backlink" href="../index.html">ACCUEIL</a>
-                <a class="topnav_link backlink" href="formulaire_get.html">COMMANDE</a>
+                <a id="home_link" class="topnav_link backlink" href="index.html">ACCUEIL</a>
+                <a class="topnav_link backlink" href="formulaire_post.html">COMMANDE</a>
                 <a class="topnav_link backlink" href="contact.html">CONTACT</a>
-    
+
             </div>
         </nav>
-    
+
     </header>
     <main>
         <div>
@@ -40,10 +40,10 @@
             <label for="last_name" class="last_name">Nom :</label>
             <label for="phone" class="phone">Téléphone :</label>
             <label for="burger" class="burger">Choisissez votre burger :</label>
-            <label for="grid-item4" class="formule">Choississez votre formule :</label>
+            <p class="formule">Choississez votre formule :</p>
             <label for="time" class="time">Pour quelle heure voulez-vous votre commande ?</label>
-            <label for="end" class="end">Voulez-vous être contacté par téléphone lorsque votre commande est
-                prête ?</label>
+            <p class="end">Voulez-vous être contacté par téléphone lorsque votre commande est
+                prête ?</p>
             <label for="paiement" class="paiement">Méthode de paiement :</label>
             <input type="text" id="last_name" class="grid-item1" name="nom" required pattern="[a-zA-ZéèîïÉÈÎÏ-']+">
             <input type="text" id="first_name" class="grid-item2" name="prenom" required>
@@ -54,21 +54,33 @@
                 <option value="classique">Classique</option>
                 <option value="bbc">Barbecue</option>
                 <option value="savoyard">Savoyard</option>
-				<option value="veggie">Veggie</option>
+                <option value="veggie">Veggie</option>
                 <option value="poulet">Poulet</option>
                 <option value="ultime">Ultime</option>
             </select>
             <span class="grid-item4">
-                <input type="radio" name="formule" value="S" required> Sandwitch seul <br>
-                <input type="radio" name="formule" value="S_F" required> Sandwitch + Frites <br>
-                <input type="radio" name="formule" value="S_B" required> Sandwitch + Boisson <br>
-                <input type="radio" name="formule" value="S_B_F" required> Sandwitch + Frites + Boisson
+                <label>
+                    <input type="radio" name="formule" value="S" required> Sandwitch seul <br>
+                </label>
+                <label>
+                    <input type="radio" name="formule" value="S_F" required> Sandwitch + Frites <br>
+                </label>
+                <label>
+                    <input type="radio" name="formule" value="S_B" required> Sandwitch + Boisson <br>
+                </label>
+                <label>
+                    <input type="radio" name="formule" value="S_B_F" required> Sandwitch + Frites + Boisson
+                </label>
                 <br>
             </span>
             <input type="time" id="time" class="grid-item5" name="heure" required>
-            <span class="grid-item6" id="end">
-                <input type="radio" name="contact" value="Oui" required> Oui
-                <input type="radio" name="contact" value="Non" required> Non
+            <span class="grid-item6">
+                <label>
+                    <input type="radio" name="contact" value="Oui" required> Oui
+                </label>
+                <label>
+                    <input type="radio" name="contact" value="Non" required> Non
+                </label>
             </span>
             <select id="paiement" class="grid-item7" name="paiement" required>
                 <option value="">Veuillez choisir une option</option>
@@ -84,20 +96,20 @@
     <footer class="footer">
         <div class="footer__addr">
             <h1 class="footer__logo">Burger</h1>
-    
+
             <h2>Contact</h2>
-    
+
             <address class="adresse">
                 <a href="contact.html">1 Rue de la Technologie, 69100 Villeurbanne</a>
             </address>
             <a class="footer__btn" href="mailto:burger@gmail.com">Contactez nous</a>
         </div>
-    
+
         <ul class="footer__nav">
-    
+
             <li class="nav__item">
                 <h2 class="nav__title">Legal</h2>
-    
+
                 <ul class="nav__ul">
                     <li>
                         <a href="#" download="rgpd.docx">Politique de confidentialité</a>
@@ -108,10 +120,10 @@
                 </ul>
             </li>
         </ul>
-    
+
         <div class="Legal">
             <p>&copy; 2022 Burger. Tout droits réservés.</p>
-    
+
             <div class="legal__links"></div>
         </div>
     </footer>
