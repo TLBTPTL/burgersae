@@ -9,7 +9,6 @@ body {
     font-family: 'Oswald';
     font-weight: 200;
     font-style: inherit;
-    height: 1mv;
     background-image: url('../Images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,10 +57,16 @@ a:visited{
 .descri_box{
     display: flex;
     align-items: center;
-    padding-left: 3%;
+    padding: 3%;
     border: 2px dashed white;
-    margin-top: 10px;
+    margin: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
     
+}
+
+#descri_title{
+    margin-left: 1%;
 }
 
 .pres_box,
@@ -88,8 +93,15 @@ a:visited{
 
 .descri_txt{
     margin-left: 20%;
-    
 }
+
+#prix{
+    text-align: right;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
 
 .intro {
     text-align: center;
